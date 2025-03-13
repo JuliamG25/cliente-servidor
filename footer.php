@@ -20,9 +20,8 @@
 
       <div class="box">
          <h3>Info De Contactos</h3>
-         <p> <i class="fas fa-phone"></i> +57 321 4621060 </p>
-         <p> <i class="fas fa-phone"></i> +57 311 3033872 </p>
-         <p> <i class="fas fa-envelope"></i> wilsonsaavedra9988@gmail.com</p>
+         <p> <i class="fas fa-phone"></i> +57 310 3287849 </p>
+         <p> <i class="fas fa-envelope"></i> wilgelgar@gamil.com</p>
          <p> <i class="fas fa-envelope"></i> juliam@gmail.com</p>
       </div>
 

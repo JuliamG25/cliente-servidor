@@ -44,48 +44,48 @@ if(isset($_POST['submit'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>login</title>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inicio de sesión</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/components.css">
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="css/components.css"> 
 
-</head>
-<body>
+   </head>
+   <body style="background-image:url(images/burguer.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;height: 100vh;margin: 0;">
 
-<?php
+      <?php
 
-if(isset($message)){
-   foreach($message as $message){
-      echo '
-      <div class="message">
-         <span>'.$message.'</span>
-         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-      </div>
-      ';
-   }
-}
+      if(isset($message)){
+         foreach($message as $message){
+            echo '
+            <div class="message">
+               <span>'.$message.'</span>
+               <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+            </div>
+            ';
+         }
+      }
 
-?>
-   
-<section class="form-container">
+      ?>
+         
+      <section style="min-height:100vh;" class="form-container">
 
-   <form action="" method="POST">
-      <h3>Unete Ahora</h3>
-      <input type="email" name="email" class="box" placeholder="Ingresa tu Email" required>
-      <input type="password" name="pass" class="box" placeholder="Ingresa tu contraseña" required>
-      <input type="submit" value="login now" class="btn" name="submit">
-      <p><a href="register.php">¿No Tienes una cuenta?</a></p>
-   </form>
+         <form action="" method="POST">
+            <h3>únete Ahora</h3>
+            <input type="email" name="email" class="box" placeholder="Email" required>
+            <input type="password" name="pass" class="box" placeholder="Contraseña" required>
+            <input type="submit" value="login now" class="btn" name="submit">
+            <p style="font-size:1.5rem;margin-top:1rem">Si no tienes una cuenta<span><a href="register.php">¡Clip aquí!</a></span></p>
+         </form>
 
-</section>
+      </section>
 
 
-</body>
+   </body>
 </html>

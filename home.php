@@ -100,9 +100,8 @@ if(isset($_POST['add_to_cart'])){
    <section class="home">
 
       <div class="content">
-         <span>NO NOS COPIAMOS DE RAPPI</span>
-         <h3>Alcanza tu obesidad</h3>
-         <p>Descripción</p>
+         <span>Tu comida favorita en un solo lugar</span>
+         <h3>Las mejores marcas</h3>
          <a href="about.php" class="btn">Sobre Nosotros</a>
       </div>
 

@@ -17,7 +17,7 @@ if(isset($message)){
 
    <div class="flex">
 
-      <a href="admin_page.php" class="logo">JW Restaurant<span>.</span></a>
+      <a href="home.php" class="logo">JW Restaurant<span>.</span></a>
 
       <nav class="navbar">
          <a href="home.php">Home</a>
@@ -51,10 +51,6 @@ if(isset($message)){
          <p><?= $fetch_profile['name']; ?></p>
          <a href="user_profile_update.php" class="btn">Actualizar Perfil</a>
          <a href="logout.php" class="delete-btn">Salir</a>
-         <div class="flex-btn">
-            <a href="login.php" class="option-btn">Login</a>
-            <a href="register.php" class="option-btn">Register</a>
-         </div>
       </div>
 
    </div>

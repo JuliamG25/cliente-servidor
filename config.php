@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $username = "root";
-$password = "";
-$dbName = "Proyecto1";
+$password = "12345";
+$dbName = "proyecto1";
 
 // DSN para MySQL
 $dsn = "mysql:host=$host;dbname=$dbName";
