@@ -106,53 +106,44 @@ if(isset($_POST['order'])){
 
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" placeholder="enter your name" class="box" required>
+            <span>Nombre :</span>
+            <input type="text" name="name"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>your number :</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" required>
+            <span>Número de teléfono :</span>
+            <input type="number" name="number"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>your email :</span>
-            <input type="email" name="email" placeholder="enter your email" class="box" required>
+            <span>Email :</span>
+            <input type="email" name="email"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
+            <span>Método de pago :</span>
             <select name="method" class="box" required>
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
+               <option value="cash on delivery">Efectivo</option>
+               <option value="credit card">Tarjeta de crédito</option>
+               <option value="paytm">Tarjeta débito</option>
             </select>
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="flat" placeholder="e.g. flat number" class="box" required>
+            <span>Avenida: </span>
+            <input type="text" name="flat"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>address line 02 :</span>
-            <input type="text" name="street" placeholder="e.g. street name" class="box" required>
+            <span>Calle:</span>
+            <input type="text" name="street"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" placeholder="e.g. mumbai" class="box" required>
+            <span>Barrio:</span>
+            <input type="text" name="city"  class="box" required>
          </div>
          <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" required>
-         </div>
-         <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" placeholder="e.g. India" class="box" required>
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" class="box" required>
+            <span>Punto de referencia:</span>
+            <input type="text" name="state" placeholder="Frente a, al lado de, etc" class="box" required>
          </div>
       </div>
 
-      <input type="submit" name="order" class="btn <?= ($cart_grand_total > 1)?'':'disabled'; ?>" value="place order">
+      <input type="submit" name="order" class="btn <?= ($cart_grand_total > 1)?'':'disabled'; ?>" value="Realizar pedido">
 
    </form>
 
