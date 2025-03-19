@@ -111,35 +111,35 @@ if(isset($_POST['add_to_cart'])){
 
 <section class="home-category">
 
-   <h1 class="title">Tiendas</h1>
+   <h1 class="title">Franquicias</h1>
 
    <div class="box-container">
 
       <div class="box">
          <img src="images/cat-1.jpg" alt="">
+         <p>Lo mejor de</p>
          <h3>McDonald</h3>
-         <p>a.</p>
          <a href="category.php?category=fruits" class="btn">McDonald</a>
       </div>
 
       <div class="box">
          <img src="images\Kfc.png" alt="">
+         <p>Lo mejor de</p>
          <h3>Kfc</h3>
-         <p>a.</p>
          <a href="category.php?category=meat" class="btn">Kfc</a>
       </div>
 
       <div class="box">
          <img src="images/presto.jpg" alt="">
+         <p>Lo mejor de</p>
          <h3>Presto</h3>
-         <p>a.</p>
          <a href="category.php?category=vegitables" class="btn">Presto</a>
       </div>
 
       <div class="box">
          <img src="images/juan valdez.png" alt="">
+         <p>Lo mejor de</p>
          <h3>Juan Valdez</h3>
-         <p>a.</p>
          <a href="category.php?category=fish" class="btn">Juan Valdez</a>
       </div>
 
@@ -154,7 +154,7 @@ if(isset($_POST['add_to_cart'])){
    <div class="box-container">
 
    <?php
-      $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+      $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 10");
       $select_products->execute();
       if($select_products->rowCount() > 0){
          while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){ 
@@ -169,8 +169,8 @@ if(isset($_POST['add_to_cart'])){
       <input type="hidden" name="p_price" value="<?= $fetch_products['price']; ?>">
       <input type="hidden" name="p_image" value="<?= $fetch_products['image']; ?>">
       <input type="number" min="1" value="1" name="p_qty" class="qty">
-      <input type="submit" value="add to wishlist" class="option-btn" name="add_to_wishlist">
-      <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+      <input type="submit" value="Añadir a lista de deseos" class="option-btn" name="add_to_wishlist">
+      <input type="submit" value="Añadir al carrrito" class="btn" name="add_to_cart">
    </form>
    <?php
       }

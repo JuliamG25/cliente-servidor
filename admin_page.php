@@ -47,7 +47,7 @@ if(!isset($admin_id)){
          };
       ?>
       <h3>$<?= $total_pendings; ?></h3>
-      <p>Ordenes Pendientas</p>
+      <p>Ordenes Pendientes</p>
       <a href="admin_orders.php" class="btn">Ver Ordenes</a>
       </div>
 

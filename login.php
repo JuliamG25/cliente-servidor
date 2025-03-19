@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
             <h3>únete Ahora</h3>
             <input type="email" name="email" class="box" placeholder="Email" required>
             <input type="password" name="pass" class="box" placeholder="Contraseña" required>
-            <input type="submit" value="login now" class="btn" name="submit">
+            <input type="submit" value="Ingresar" class="btn" name="submit">
             <p style="font-size:1.5rem;margin-top:1rem">Si no tienes una cuenta<span><a href="register.php">¡Clip aquí!</a></span></p>
          </form>
 

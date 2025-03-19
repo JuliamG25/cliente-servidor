@@ -38,7 +38,7 @@ if(!isset($user_id)){
       <div class="box">
          <img src="images/about-img-1.png" alt="">
          <h3>¿Por que nosotros?</h3>
-         <p>Quien te hizo daño</p>
+         <p>Somos la mejor opción</p>
          <a href="contact.php" class="btn">Contactanos</a>
       </div>
 

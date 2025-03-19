@@ -20,7 +20,7 @@ if(isset($message)){
       <a href="home.php" class="logo">JW Restaurant<span>.</span></a>
 
       <nav class="navbar">
-         <a href="home.php">Home</a>
+         <a href="home.php">Inicio</a>
          <a href="shop.php">Tienda</a>
          <a href="orders.php">Ordenes</a>
          <a href="about.php">Sobre Nosotros</a>

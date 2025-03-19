@@ -33,7 +33,7 @@ if(!isset($user_id)){
 
 <section class="placed-orders">
 
-   <h1 class="title">PEDIDOS</h1>
+   <h1 class="title">Historial de pedidos</h1>
 
    <div class="box-container">
 

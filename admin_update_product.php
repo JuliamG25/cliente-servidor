@@ -75,7 +75,7 @@ if(isset($_POST['update_product'])){
 
 <section class="update-product">
 
-   <h1 class="title">update product</h1>   
+   <h1 class="title">Actualizar producto</h1>   
 
    <?php
       $update_id = $_GET['update'];
@@ -100,7 +100,7 @@ if(isset($_POST['update_product'])){
       <textarea name="details" required placeholder="enter product details" class="box" cols="30" rows="10"><?= $fetch_products['details']; ?></textarea>
       <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
       <div class="flex-btn">
-         <input type="submit" class="btn" value="update product" name="update_product">
+         <input type="submit" class="btn" value="Actualizar" name="update_product">
          <a href="admin_products.php" class="option-btn">Volver</a>
       </div>
    </form>
